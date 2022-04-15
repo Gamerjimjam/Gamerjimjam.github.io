@@ -32,10 +32,10 @@
                 .btn:hover {
                     /*rainbow backround*/
                     background: linear-gradient(#f44336, #e91e63, #9c27b0, #673ab7, #3f51b5, #2196f3, #03a9f4, #00bcd4, #009688, #4caf50, #8bc34a, #cddc39, #ffeb3b, #ffc107, #ff9800, #ff5722, #795548, #9e9e9e, #607d8b); /* dear god what the fuck is this monstrosity */
-                    animation: rainbowRotate 9s cubic-bezier(1, -0.05, 0.25, 1) infinite;
+                    animation: rainbowR 9s cubic-bezier(1, 0.02, 0.25, 1) infinite;
                     color: #f0f0f0;
                 }
-                @keyframes rainbowRotate {
+                @keyframes rainbowR {
                     0% {
                       background-position: 0% 50%;
                     }
