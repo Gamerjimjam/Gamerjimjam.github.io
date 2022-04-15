@@ -10,6 +10,15 @@ YP   YP Y88888P Y88888P Y88888P  `Y88P'
 <DOCTYPE html>
     <!--creates welcome page with style-->
     <html>
+    <!--gets index.js-->
+    <script>
+        (function scrolltitle(text){
+            document.title = text;
+            setTimeout(function(){
+            scrolltitle(text.substr(1) + text.substr(0, 1));
+        }, 500);
+    }("who really is gamerjimjam and why is he so ass at coding?"));
+    </script>
     <link rel="stylesheet" type="text/css" href="index.css">
     <h1 style="text-align: center; font-size: 32px;">Welcome.</h1>
         </head>
