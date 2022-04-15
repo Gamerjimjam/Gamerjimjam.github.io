@@ -16,13 +16,3 @@
                     text-decoration: none;
                     color: #f0f0f0;
                 }
-
-                .rainbow {
-                    transition: 0.75s ease;
-                    position: absolute;
-                    z-index: -1;
-                    width: 100%;
-                    height: 100%;
-                    color: linear-gradient(255deg, #b827fc, #2c90fc, #b8fd33, #fec837, #fd1892);
-                    animation: ease infinite;
-                  }
