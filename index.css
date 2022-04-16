@@ -35,7 +35,8 @@
                     z-index: -1;
                     background: linear-gradient(255deg, #b827fc, #2c90fc, #b8fd33, #fec837, #fd1892);
                     animation: 9s ease infinite;
-                    /*ayo 🤨*/
+                    display: flex;
+                    
                 }
 
 
