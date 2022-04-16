@@ -33,6 +33,7 @@ fact_displayer = () => {
         }
     }, 100);
 }
+// why does it not display??
 
 // runs fact_displayer every 5 seconds
 setInterval(fact_displayer, 5000);
