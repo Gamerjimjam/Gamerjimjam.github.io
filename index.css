@@ -28,9 +28,8 @@
                 }
                 .btn:hover {
                     /*turns into opposite colors when hovered over*/
-                    background-color: #e1e1e1;
-                    color: #444444;
-                    transition: 0.5s cubic-bezier(1, 0.02, 0.25, 1);
+                    color: #e1e1e1 !important;
+                    background: rgba(19, 20, 21, 0.75);
                 }
 
 
