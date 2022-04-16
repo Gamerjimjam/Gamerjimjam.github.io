@@ -32,22 +32,10 @@
                 .btn:hover {
                     /*rainbow backround*/
                     transition: 0.75s ease;
-                    position: absolute;
                     z-index: -1;
                     background: linear-gradient(255deg, #b827fc, #2c90fc, #b8fd33, #fec837, #fd1892);
-                    animation: rainbowRotate 9s ease infinite;
+                    animation: 9s ease infinite;
                 }
-                @keyframes rainbowR {
-                    0% {
-                      background-position: 0% 50%;
-                    }
-                    50% {
-                      background-position: 100% 51%;
-                    }
-                    100% {
-                      background-position: 0% 50%;
-                    }
-                  }
 
 
 /*
