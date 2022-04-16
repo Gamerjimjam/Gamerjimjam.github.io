@@ -17,22 +17,27 @@ var facts = ["every second we are inching closer to death","AMONG US???","im bor
 // when every fact is displayed it enters word by word
 
 fact_displayer = () => {
+    //I added this line to make sure #fact is empty before I overwrite its content
+    document.getElementById("fact").innerHTML='';
+  
     var fact = facts[Math.floor(Math.random() * facts.length)];
-    var i = 0;
+  
+    var i = 8;
+  
     var timer = setInterval(function() {
-        document.getElementById("fact").innerHTML += fact[i];
-        i++;
-        if (i >= fact.length) {
-            clearInterval(timer);
-            setTimeout(() => {
-                document.getElementById("fact").innerHTML = "";
-                setTimeout(() => {
-                    scrolltitle(fact);
-                }, 1000);
-            }, 1000);
-        }
+      document.getElementById("fact").innerHTML += fact[i];
+      i++;
+  
+      if (i >= fact.length) {
+  
+        clearInterval(timer);
+  
+        //setTimeout(() => {
+          //document.getElementById("fact").innerHTML = "";
+          //setTimeout(() => {
+            //scrolltitle(fact);
+         // }, 1000);
+        //}, 1000);
+      }
     }, 100);
-}
-
-// runs fact_displayer every 5 seconds
-setInterval(fact_displayer, 5000);
+  }
