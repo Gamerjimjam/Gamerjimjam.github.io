@@ -8,10 +8,31 @@
 
 var facts = ["every second we are inching closer to death","AMONG US???","im bored","i shouldve gotten an ai to generate facts","totally tubular dude 🤙","facts dont care about your feelings"]
 
-(function fact(){
-    var random = Math.floor(Math.random() * facts.length);
-    document.getElementById("fact").innerHTML = facts[random];
-    setTimeout(function(){
-    fact();
-}, 5000);
-}());
+// displays random fact every 5 seconds
+// when every fact is displayed it enters word by word
+
+
+
+// displays random fact every 5 seconds
+// when every fact is displayed it enters word by word
+
+fact_displayer = () => {
+    var fact = facts[Math.floor(Math.random() * facts.length)];
+    var i = 0;
+    var timer = setInterval(function() {
+        document.getElementById("fact").innerHTML += fact[i];
+        i++;
+        if (i >= fact.length) {
+            clearInterval(timer);
+            setTimeout(() => {
+                document.getElementById("fact").innerHTML = "";
+                setTimeout(() => {
+                    scrolltitle(fact);
+                }, 1000);
+            }, 1000);
+        }
+    }, 100);
+}
+
+// runs fact_displayer every 5 seconds
+setInterval(fact_displayer, 5000);
