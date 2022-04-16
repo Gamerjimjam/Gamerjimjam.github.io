@@ -30,13 +30,10 @@
                     transition: 0.5s cubic-bezier(1, 0.02, 0.25, 1);
                 }
                 .btn:hover {
-                    /*rainbow backround*/
-                    transition: 0.75s ease;
-                    z-index: -1;
-                    background: linear-gradient(255deg, #b827fc, #2c90fc, #b8fd33, #fec837, #fd1892);
-                    animation: 9s ease infinite;
-                    display: flex;
-
+                    /*turns into opposite colors when hovered over*/
+                    background-color: #e1e1e1;
+                    color: #444444;
+                    transition: 0.5s cubic-bezier(1, 0.02, 0.25, 1);
                 }
 
 
