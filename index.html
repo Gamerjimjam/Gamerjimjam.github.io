@@ -28,7 +28,6 @@ YP   YP Y88888P Y88888P Y88888P  `Y88P'
 
             <!--creates hidden button that leads to a easter egg-->
 
-
             <style>
                 .secretsection{
                     position: absolute;
@@ -39,6 +38,11 @@ YP   YP Y88888P Y88888P Y88888P  `Y88P'
                 }
             </style>
             <a class="secretsection" href="secret.html">hey</a>
+            <!--makes button that triggers a function in index.js-->
+            <a class="btn" id randomFact onclick="randomFact()">
+                <i aria-hidden="true"></i>
+                "click for a fact"
+            </a>
             <p id="fact"></p>
             <!--WORK-->
         </body>

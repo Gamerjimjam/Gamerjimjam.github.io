@@ -12,5 +12,8 @@ var facts = ["every second we are inching closer to death","AMONG US???","im bor
 function randomFact() {
     var randomNumber = Math.floor(Math.random() * facts.length);
     document.getElementById("fact").innerHTML = facts[randomNumber];
+    // adds scroll frame to the text so it looks cool
+    scrolltitle(facts[randomNumber]);
 }
-
+// calls function every page reload
+randomFact();
