@@ -32,12 +32,12 @@ fact_displayer = () => {
   
         clearInterval(timer);
   
-        //setTimeout(() => {
-          //document.getElementById("fact").innerHTML = "";
-          //setTimeout(() => {
-            //scrolltitle(fact);
-         // }, 1000);
-        //}, 1000);
+        setTimeout(() => {
+          document.getElementById("fact").innerHTML = "";
+          setTimeout(() => {
+            scrolltitle(fact);
+         }, 1000);
+        }, 1000);
       }
     }, 100);
   }
