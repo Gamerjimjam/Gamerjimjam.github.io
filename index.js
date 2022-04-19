@@ -25,3 +25,5 @@ var facts = ["every second we are inching closer to death","AMONG US???","im bor
         }, speed);
     }
 }());
+
+//mashallah inshalla ya khalil
