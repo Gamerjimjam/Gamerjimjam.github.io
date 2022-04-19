@@ -8,8 +8,7 @@
 
 var facts = ["every second we are inching closer to death","AMONG US???","im bored","i shouldve gotten an ai to generate facts","totally tubular dude 🤙","facts dont care about your feelings"]
 
-(function displayfctwhenbutton(text){
-    document.getElementBYId("button").onclick = function(){
+(function displayfct(text){
         // makes fact appear word by word
         var i = 0;
         var txt = facts[i];
@@ -23,7 +22,10 @@ var facts = ["every second we are inching closer to death","AMONG US???","im bor
                 clearInterval(x);
             }
         }, speed);
-    }
 }());
 
+// runs displayfct function when button is pressed
+document.getElementById("factbutton").addEventListener("click", function(){
+    displayfct();
+});
 //mashallah inshalla ya khalil
